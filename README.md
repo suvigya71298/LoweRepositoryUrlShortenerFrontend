@@ -1,30 +1,26 @@
-## Available Scripts
+# URL-Shortener React JS Application
 
-In the project directory, you can run the foloowing command to install the dependencies:
+URL-Shortener application helps you create a tiny URL (shortened url) which helps in giving a lot of advantages in different aspects of business like Data analytics, gather click data and moreover eases out life as they are conveniently sharable and usable in areas where there are character limits.
 
-### `npm install`
-
-
-To Run the application, run the following command
-
-### `npm run start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-Note: Ensure the backend is running at port 8080 and the frontend is running at port 3000 to avoid any CORS Error.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-To run Test Cases, run the following command
-
-### `npm test
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a frontend web-application for generating tinyUrl which uses tech stack of HTML, CSS, ReactJs & NodeJs.
+This application is dependent on the URL-Shortener backend application to run the backend logic.
+This application uses its own dockerfile to build its docker image. The docker image of this application will be run using docker-compose.yaml file contained in the backend application.
 
 
-Overall Code Coverage:
+How to install and run the project.
+
+# Prerequisite:
+You should have docker-desktop or docker-agent installed on your system.
+Create a docker image of URL-Shortener-Web application as this image is required by the backend application to launch all containers using docker-compose.
+
+# Steps to run:
+1. Git clone the project to your local.
+2. Change directory to project root.
+3. Open any terminal-emulator [cmd/git-bash/powershell]
+4. Run docker build -t url-shortener-frontend .
+
+
+# Overall Code Coverage:
 
 
 ![badge-branches](https://user-images.githubusercontent.com/70306563/183555938-dbb0562d-f341-4bc2-b9ea-2d69570b77a7.svg)
